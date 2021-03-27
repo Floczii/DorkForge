@@ -16,7 +16,7 @@ def forge(form):
   for s in inputs:
     if s != "":
       print(s)
-      res += "{}:{} ".format(requests[i],inputs[i])
+      res += "{}:\"{}\" ".format(requests[i],inputs[i])
     i += 1
   
   
