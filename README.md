@@ -2,7 +2,7 @@
 
 ### Dork requests creator.
 
-![Screenshot](https://raw.githubusercontent.com/Floczii/DorkForge/master/web/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/Floczii/DorkForge/master/screenshot.PNG)
 Dork Forge is a simple framework for google dork requests.
 It reminds main features and wraps them to forge the final request.
 
