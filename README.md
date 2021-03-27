@@ -24,3 +24,5 @@ The app will run on port 5000 : http://localhost:5000/
 - Add Help button on inputs
 - Add condition selectors
 - Rework CSS to fit with all devices
+
+This project is licensed under the terms of the "GNU General Public License v3.0" license.
