@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DorkForge</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Dork requests creator">
+        <meta name="keywords" content="Google, Dork, Forge, Floczii">
+        <meta name="author" content="Floczii">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ url_for('static', filename='background.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <canvas id="projector">Your browser does not support the Canvas element.</canvas>
+        <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='particles.js') }}"></script>
+            
+        <div id="maindiv">
+            <h1>Dork Forge</h1>
+        <form id="mainform" class="form-inline" action="/" method="post">
+            <div id="basicform" class="formdiv"><div></div>
+                <input id="intext" type="text" name="intext" placeholder="In Text" />
+                <input id="inurl" type="text" name="inurl" placeholder="In URL" />
+                <input id="intitle" type="text" name="intitle" placeholder="In Title" />
+                <input id="filetype" type="text" name="filetype" placeholder="File Type" />
+                <input id="site" type="text" name="site" placeholder="Site" />
+                
+            </div>
+            <div id="advancedform" class="formdiv">
+                <input id="related" type="text" name="related" placeholder="related"  />
+                <input id="cache" type="text" name="cache" placeholder="cache" />
+                <input id="link" type="text" name="link" placeholder="link" />
+                
+            </div>
+            <div id="button-container">
+                <a href="#" onclick="document.getElementById('mainform').submit();" class="btn">FORGE !</a>
+            </div>
+        </form>
+        <br />
+        <div id="output">
+        {{dork}}
+    </div>
+        </div>
+    </body>
+</html>
